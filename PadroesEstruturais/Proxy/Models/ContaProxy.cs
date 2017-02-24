@@ -9,10 +9,9 @@ namespace PadroesEstruturais.Models
 {
     public class ContaProxy : IConta
     {
-        public double Saldo { get; set; }
-        
         private readonly IConta _Conta;
-
+        public double Saldo { get; set; }     
+        
         public ContaProxy(IConta conta)
         {
             _Conta = conta;

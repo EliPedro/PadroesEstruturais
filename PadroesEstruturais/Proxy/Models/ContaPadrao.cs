@@ -1,5 +1,4 @@
-﻿
-using PadroesEstruturais.Interface;
+﻿using PadroesEstruturais.Interface;
 
 namespace PadroesEstruturais.Models
 {
@@ -8,8 +7,7 @@ namespace PadroesEstruturais.Models
         public double Saldo { get; set; }
 
         public void Deposita(double valor)
-        {
-        
+        {      
             this.Saldo += valor;
         }
 
