@@ -11,10 +11,21 @@ namespace Proxy
         private static IKernel kernel = new StandardKernel();
 
         static void Main(string[] args)
-        {
-            
+        {            
             AddBiding();
+            Execute();
+        }
 
+        #region AddBiding
+        private static void AddBiding()
+        {
+            kernel.Bind<IConta>().To<ContaPadrao>();
+        }
+        #endregion
+
+        #region Execute
+        private static void Execute()
+        {
             var contaPadrao = kernel.Get<IConta>();
 
             var proxy = new ContaProxy(contaPadrao);
@@ -28,15 +39,11 @@ namespace Proxy
             Console.WriteLine("Verificando saldo....");
             Thread.Sleep(500);
 
-            Console.WriteLine("Saldo R$: {0}",proxy.Saldo);
-            
+            Console.WriteLine("Saldo R$: {0}", proxy.Saldo);
+
             Console.ReadKey();
-
         }
+        #endregion
 
-        private static void AddBiding()
-        {
-            kernel.Bind<IConta>().To<ContaPadrao>();
-        }
-    }
-}
+    }//Fim da clase Program
+}//Fim do namespace
