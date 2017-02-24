@@ -34,12 +34,12 @@ namespace Proxy
 
             Thread.Sleep(300);
 
-            proxy.Saca(50);
+            proxy.Saca(25);
 
             Console.WriteLine("Verificando saldo....");
             Thread.Sleep(500);
 
-            Console.WriteLine("Saldo R$: {0}", proxy.Saldo);
+            Console.WriteLine("Saldo R$: {0}", proxy.Saldo + " .....");
 
             Console.ReadKey();
         }
