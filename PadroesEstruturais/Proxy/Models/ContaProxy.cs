@@ -1,5 +1,4 @@
-﻿
-using PadroesEstruturais.Interface;
+﻿using PadroesEstruturais.Interface;
 using System;
 using System.Threading;
 
