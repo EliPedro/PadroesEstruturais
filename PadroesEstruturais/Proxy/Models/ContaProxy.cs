@@ -2,9 +2,7 @@
 using System;
 using System.Threading;
 
-/* Objetivo: Controlar as chamadas a um objeto 
-   através de outro objeto de mesma interface.
-*/
+
 namespace PadroesEstruturais.Models
 {
     public class ContaProxy : IConta

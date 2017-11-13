@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Proxy\Proxy.csproj", "{7BEBE07E-1F0F-4DA2-9B65-B555BBCFDB04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GOF", "GOF", "{50470F25-3950-44D2-BE6B-331DAB0A6BF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csproj", "{BAD3FC10-D685-4373-9CEE-F6778DFAAE76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +19,19 @@ Global
 		{7BEBE07E-1F0F-4DA2-9B65-B555BBCFDB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BEBE07E-1F0F-4DA2-9B65-B555BBCFDB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BEBE07E-1F0F-4DA2-9B65-B555BBCFDB04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAD3FC10-D685-4373-9CEE-F6778DFAAE76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD3FC10-D685-4373-9CEE-F6778DFAAE76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD3FC10-D685-4373-9CEE-F6778DFAAE76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD3FC10-D685-4373-9CEE-F6778DFAAE76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7BEBE07E-1F0F-4DA2-9B65-B555BBCFDB04} = {50470F25-3950-44D2-BE6B-331DAB0A6BF1}
+		{BAD3FC10-D685-4373-9CEE-F6778DFAAE76} = {50470F25-3950-44D2-BE6B-331DAB0A6BF1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D177C9EF-C9DF-4E24-9819-68698E20DD3A}
 	EndGlobalSection
 EndGlobal

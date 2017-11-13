@@ -6,6 +6,9 @@ using System.Threading;
 
 namespace Proxy
 {
+    /* Objetivo: Controlar as chamadas a um objeto 
+       através de outro objeto de mesma interface.
+     */
     class Program
     {
         private static IKernel kernel = new StandardKernel();
